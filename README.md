@@ -6,10 +6,12 @@ A deep learning project using Convolutional Neural Networks and Transfer Learnin
 
 ## 📁 Dataset 
 
-Trained on kaggle's [Plant Village Dataset (Updated)] dataset
+Trained on kaggle's [Plant Village Dataset (Updated)] 
 
 - Structured into `Train`, `Val`, and `Test` directories
 - Categories include:
+  - Septoria Leaf Spot 
+  - Bacterial Spot
   - Early Blight
   - Late Blight
   - Yellow Leaf Curl Virus
