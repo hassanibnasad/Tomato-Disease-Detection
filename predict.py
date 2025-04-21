@@ -9,14 +9,14 @@ import os
 CLASS_NAMES = [
     'Bacterial Spot',
     'Early Blight',
+    'Healthy',
     'Late Blight',
-    'Yellow Leaf Curl Virus',
     'Septoria Leaf Spot',
-    'Healthy'
+    'Yellow Leaf Curl Virus'
 ]
 
 # Load the trained model
-model = load_model("models/tomato_disease_model.keras")
+model = load_model("models/tomato_disease_model2.keras")
 
 def predict_image(image_path):
     # Load and preprocess image
