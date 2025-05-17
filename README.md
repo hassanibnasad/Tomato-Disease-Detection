@@ -37,7 +37,7 @@ Trained on: [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plant
 ## 🌍 Live Demo
 
 > ✅ Deployed on Streamlit Cloud  
-> [Link:](https://tomato-disease-detection-2gdpyuxyzzeil4buqxmvfd.streamlit.app/)
+> [Link for Interactive web interface via Streamlit](https://tomato-disease-detection-2gdpyuxyzzeil4buqxmvfd.streamlit.app/)
   
 ---
 
@@ -65,6 +65,13 @@ To get accurate results, follow these tips when uploading images:
 - Shadows, poor lighting, or partial leaves
 
 > ℹ️ The model was trained on standardized leaf images. Real-world images with noise or complex backgrounds may reduce accuracy.
+
+---
+
+📌 Future Enhancements
+🌿 Automatic leaf segmentation for better real-world predictions
+📈 Visualization of class-wise prediction probabilities
+☁️ Deploy to Hugging Face or Streamlit Cloud
 
 ---
 

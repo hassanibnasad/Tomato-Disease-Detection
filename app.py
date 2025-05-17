@@ -7,7 +7,7 @@ from PIL import Image
 # Load the trained model
 model = load_model("models/tomato_disease_model.keras")
 
-# Class labels (make sure these match the training order)
+# Class labels 
 class_names = [
     'Bacterial Spot',
     'Early Blight',
@@ -20,7 +20,11 @@ class_names = [
 # Streamlit UI
 st.title("🍅 Tomato Leaf Disease Detection")
 st.write("Upload an image of a tomato leaf to detect the disease.")
+<<<<<<< HEAD
 st.info("For best results, upload a close-up of a single tomato leaf against a plain background (256x256 recommended size).")
+=======
+st.info("For best results, upload a close-up of a single tomato leaf against a plain background.")
+>>>>>>> aacd4d5 (Update app.py and cleanup local files)
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
