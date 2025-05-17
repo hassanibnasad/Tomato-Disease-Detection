@@ -20,6 +20,7 @@ class_names = [
 # Streamlit UI
 st.title("🍅 Tomato Leaf Disease Detection")
 st.write("Upload an image of a tomato leaf to detect the disease.")
+st.info("For best results, upload a close-up of a single tomato leaf against a plain background (256x256 recommended size).")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
@@ -29,9 +30,9 @@ if uploaded_file is not None:
     image_pil = Image.open(uploaded_file).convert("RGB")
     st.image(image_pil, caption="Uploaded Leaf Image", use_column_width=True)
 
-    # Preprocess image (remove division by 255)
+    # Preprocess image 
     img = image.load_img(uploaded_file, target_size=(256, 256))
-    img_array = image.img_to_array(img)  # Do not divide by 255
+    img_array = image.img_to_array(img)  
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 
     # Predict
